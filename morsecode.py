@@ -136,7 +136,7 @@ def is_validated_morse_code(user_input):
     
     # 2)
     for ch in li:
-        if ch not in re_morse:
+        if ch != "" and ch not in re_morse:
             return False
     
     return True
